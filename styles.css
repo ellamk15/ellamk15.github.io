@@ -1,0 +1,118 @@
+/* Main Structure */
+body {
+	font-family:Arial;
+	background:#DCF0F2;
+}
+
+header {
+	background:#80B9BF;
+	padding:5px;
+}
+
+nav {
+	background:#80B9BF;
+	padding:5px;
+}
+
+main {
+	background:#A3D3D9;
+	padding:5px;
+} 
+
+footer {
+	background:#80B9BF;
+	padding:5px;
+}
+
+#home-header-3 {
+	text-align:center;
+}
+
+/* Navigation */
+#main-nav ul {
+	list-style-type:none;
+	padding-left:0;
+	padding-right:7px;
+}
+
+#main-nav a {
+	text-decoration:none;
+	background:#C4EEF2;
+	color:darkslategray;
+	padding:3px;
+	width:100%;
+	display:block;
+}
+
+#main-nav a:hover {
+	background:#465759;
+	color:white;
+}
+
+/* Images */
+#axid , #raven , #usc , #hhi {
+	padding-left:10%;
+	width:75%;
+}
+
+/* Hidden */
+.hidden {
+	display:none;
+}
+
+/* Quiz Page */
+
+#content {
+	width:80%;
+	margin:auto;
+}
+
+.quiz-container {
+	display:flex;
+}
+
+.quiz-container p {
+	margin:5px;
+	flex:1;
+}
+
+.quiz {
+	flex:5;
+}
+
+.results {
+	flex:5;
+}
+
+/* Larger Resolution */
+@media(min-width:720px) {
+	#content { 
+		width:80%;
+		margin:auto;
+	}
+	
+	#main-nav li {
+		display:inline;
+	}
+	
+	#main-nav a {
+		display:inline;
+		text-align:center;
+		border-radius:2px;
+	}
+	
+	header {
+		text-align:center;
+	}
+	
+	nav { 
+		text-align:center;
+	}
+}
+
+/* Printing */
+@media print {
+	#main-nav, footer { 
+		display:none;
+	}
+}

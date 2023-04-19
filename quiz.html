@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title>Quiz</title>
+	<!--Ella Kowaleski CSCE 102 Section 14 2/1/23-->
+</head>
+<body>
+	<div id="content">
+		<header>
+			<h1>Quiz</h1>
+		</header>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="contact.html">Contact Me</a></li>
+			</ul>
+		</nav>
+		<main class="quiz-container">
+			<section class="quiz">
+				<h3>Website Development Quiz</h3>
+				<div id="quizDiv">
+					<p>What are HTML Attributes?</p><select id="sel-one">
+						<option>Labels a tag so we can use it in CSS</option>
+						<option>Added to an HTML tag and changes the way the tag is displayed</option>	
+						<option>Labels a tag so we can use it in Javascript</option>	
+						<option>There is no such thing as attributes in HTML</option>	
+					</select>
+					<br>
+					<p>Difference between ordered and unordered lists</p><select id="sel-two">
+						<option>Ordered lists displays the items as numbers while unordered lists displays the items as bullet points</option>	
+						<option>Ordered lists displays the items as bullet points while unordered lists displays the items as numbers</option>	
+						<option>Ordered lists uses the ul tag and unordered lists uses the ol tag</option>	
+						<option>There is no difference between the two</option>
+					</select>
+					<br>	
+					<p>Why do we use CSS</p><select id="sel-three">
+						<option>It creates the website</option>	
+						<option>It let's us write the website</option>	
+						<option>It makes the website look nice</option>	
+						<option>It does nothing</option>	
+					</select>
+					<br>
+					<p>What do we use to make something a variable in javascript?</p><select id="sel-four">
+						<option>variable</option>	
+						<option>value</option>	
+						<option>.variable</option>	
+						<option>.value</option>	
+					</select>
+					<br>
+				</div>
+					<button onclick="showResults()">Submit</button>
+			</section>
+			<section class="results">
+				<h3>Quiz Results</h3>
+				<div id="results">
+					<p id="question-one"></p>
+					<p id="question-two"></p>
+					<p id="question-three"></p>
+					<p id="question-four"></p>
+					<p id="total"></p>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<p>&copy;Ella copywrite</p>
+		</footer>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
